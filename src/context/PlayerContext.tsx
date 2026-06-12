@@ -67,14 +67,13 @@ export function PlayerProvider({
     const sound = new Howl({
       src: [arquivo],
       html5: true,
+      loop: true,
       onload() {
         setDuration(sound.duration())
-        // Toca automaticamente ao carregar
         sound.play()
         setPlaying(true)
         rafRef.current = requestAnimationFrame(tick)
       },
-      onend() { setPlaying(false); setProgress(0); setCurrentSec(0) },
     })
     howlRef.current = sound
     return () => { sound.unload(); cancelAnimationFrame(rafRef.current) }
