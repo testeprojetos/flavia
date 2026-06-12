@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useCounter } from '../hooks/useCounter'
 import type { AppData } from '../types'
@@ -6,29 +6,6 @@ import type { AppData } from '../types'
 interface Props {
   data: AppData
   onClose: () => void
-}
-
-function useCountUp(target: number, active: boolean) {
-  const [val, setVal] = useState(0)
-  const rafRef = useRef<number>(0)
-
-  useEffect(() => {
-    if (!active || target === 0) return
-    setVal(0)
-    const duration = 1800
-    const startTime = Date.now()
-    const tick = () => {
-      const elapsed = Date.now() - startTime
-      const progress = Math.min(elapsed / duration, 1)
-      const eased = 1 - Math.pow(1 - progress, 3)
-      setVal(Math.round(eased * target))
-      if (progress < 1) rafRef.current = requestAnimationFrame(tick)
-    }
-    rafRef.current = requestAnimationFrame(tick)
-    return () => cancelAnimationFrame(rafRef.current)
-  }, [active, target])
-
-  return val
 }
 
 // ── Slide 1 — Abertura com foto de fundo ──────────────────────────────────
@@ -245,7 +222,7 @@ function Slide5({ data }: { data: AppData }) {
 }
 
 // ── Slide 6 — O que eu mais gosto em você ────────────────────────────────
-function Slide6({ data }: { data: AppData }) {
+function Slide6({ data: _data }: { data: AppData }) {
   const items = [
     { emoji: '🤝', titulo: 'Sua lealdade', descricao: 'Você está sempre do meu lado, não importa o que aconteça.' },
     { emoji: '😊', titulo: 'Seu sorriso', descricao: 'Capaz de transformar qualquer dia difícil em algo bom.' },
