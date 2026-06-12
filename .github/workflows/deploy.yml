@@ -21,6 +21,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          lfs: false
+          fetch-depth: 1
 
       - uses: actions/setup-node@v4
         with:
@@ -30,6 +33,9 @@ jobs:
       - run: npm ci
 
       - run: npm run build
+
+      - name: Verificar arquivos no dist
+        run: ls dist/ && ls dist/fotos/ || echo "fotos nao encontradas"
 
       - uses: actions/configure-pages@v4
 
