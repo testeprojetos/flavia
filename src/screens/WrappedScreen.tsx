@@ -45,9 +45,11 @@ function Slide1({ data }: { data: AppData }) {
 // ── Slide 2 — Tempo juntos ────────────────────────────────────────────────
 function Slide2({ data }: { data: AppData }) {
   const elapsed = useCounter(data.casal.inicioRelacionamento)
+  // usa a foto principal do casal (já com base URL resolvido)
+  const bgFoto = data.casal.fotoPrincipal
   return (
     <div className="relative h-full w-full overflow-hidden">
-      <img src="/fotos/casal_capa.jpg" alt="" className="absolute inset-0 w-full h-full object-cover object-top" />
+      <img src={bgFoto} alt="" className="absolute inset-0 w-full h-full object-cover object-top" />
       <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.85) 100%)' }} />
       <div className="relative h-full flex flex-col items-center justify-center px-8 text-center">
         <motion.p
@@ -222,7 +224,8 @@ function Slide5({ data }: { data: AppData }) {
 }
 
 // ── Slide 6 — O que eu mais gosto em você ────────────────────────────────
-function Slide6({ data: _data }: { data: AppData }) {
+function Slide6({ data }: { data: AppData }) {
+  const bgFoto = data.musicaPrincipal.fotos[1] ?? data.musicaPrincipal.fotos[0]
   const items = [
     { emoji: '🤝', titulo: 'Sua lealdade', descricao: 'Você está sempre do meu lado, não importa o que aconteça.' },
     { emoji: '😊', titulo: 'Seu sorriso', descricao: 'Capaz de transformar qualquer dia difícil em algo bom.' },
@@ -231,7 +234,7 @@ function Slide6({ data: _data }: { data: AppData }) {
   ]
   return (
     <div className="relative h-full w-full overflow-hidden">
-      <img src="/fotos/casal2.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" style={{ filter: 'blur(20px)', transform: 'scale(1.1)' }} />
+      <img src={bgFoto} alt="" className="absolute inset-0 w-full h-full object-cover" style={{ filter: 'blur(20px)', transform: 'scale(1.1)' }} />
       <div className="absolute inset-0 bg-black/70" />
       <div className="relative h-full flex flex-col justify-center px-6">
         <motion.p
@@ -266,9 +269,10 @@ function Slide6({ data: _data }: { data: AppData }) {
 
 // ── Slide 7 — Top 5 ───────────────────────────────────────────────────────
 function Slide7({ data }: { data: AppData }) {
+  const bgFoto = data.musicaPrincipal.fotos[2] ?? data.musicaPrincipal.fotos[0]
   return (
     <div className="relative h-full w-full overflow-hidden">
-      <img src="/fotos/casal3.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" style={{ filter: 'blur(16px)', transform: 'scale(1.1)' }} />
+      <img src={bgFoto} alt="" className="absolute inset-0 w-full h-full object-cover" style={{ filter: 'blur(16px)', transform: 'scale(1.1)' }} />
       <div className="absolute inset-0 bg-black/75" />
       <div className="relative h-full flex flex-col justify-center px-5 py-16">
         <motion.p
@@ -305,9 +309,10 @@ function Slide7({ data }: { data: AppData }) {
 
 // ── Slide 8 — Linha do tempo ──────────────────────────────────────────────
 function Slide8({ data }: { data: AppData }) {
+  const bgFoto = data.musicaPrincipal.fotos[3] ?? data.musicaPrincipal.fotos[0]
   return (
     <div className="relative h-full w-full overflow-hidden">
-      <img src="/fotos/casal4.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" style={{ filter: 'blur(16px)', transform: 'scale(1.1)' }} />
+      <img src={bgFoto} alt="" className="absolute inset-0 w-full h-full object-cover" style={{ filter: 'blur(16px)', transform: 'scale(1.1)' }} />
       <div className="absolute inset-0 bg-black/78" />
       <div className="relative h-full flex flex-col">
         <div className="pt-14 pb-4 px-6 text-center">
