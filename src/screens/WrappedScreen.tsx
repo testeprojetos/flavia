@@ -227,10 +227,10 @@ function Slide5({ data }: { data: AppData }) {
 function Slide6({ data }: { data: AppData }) {
   const bgFoto = data.musicaPrincipal.fotos[1] ?? data.musicaPrincipal.fotos[0]
   const items = [
-    { emoji: '🤝', titulo: 'Sua lealdade', descricao: 'Você está sempre do meu lado, não importa o que aconteça.' },
+    { emoji: '👀', titulo: 'Seus olhos', descricao: 'Eu sempre me perco nos brilhos dos seus olhos. Todo dia.' },
     { emoji: '😊', titulo: 'Seu sorriso', descricao: 'Capaz de transformar qualquer dia difícil em algo bom.' },
-    { emoji: '🔗', titulo: 'Sua cumplicidade', descricao: 'A sensação de que somos parceiros em tudo.' },
-    { emoji: '🌸', titulo: 'Sua leveza', descricao: 'O jeito que você torna tudo mais simples e bonito.' },
+    { emoji: '🌸', titulo: 'Seu cheiro', descricao: 'Sou viciado, nunca quero ir embora.' },
+    { emoji: '🫶🏼', titulo: 'Sua presença', descricao: 'A vida é bem melhor, e eu sou muito mais feliz ao seu lado.' },
   ]
   return (
     <div className="relative h-full w-full overflow-hidden">
@@ -387,57 +387,91 @@ function Slide9({ data }: { data: AppData }) {
   )
 }
 
-// ── Slide 10 — Mensagem final (mantido) ───────────────────────────────────
-function Slide10({ nome1 }: { nome1: string; nome2?: string }) {
+// ── Slide 10 — Mensagem final ─────────────────────────────────────────────
+function Slide10({ nome1, nome2, fotoPrincipal }: { nome1: string; nome2?: string; fotoPrincipal: string }) {
   return (
-    <div className="flex flex-col items-center justify-center h-full px-8 text-center relative overflow-hidden" style={{ background: '#0a0a0a' }}>
-      {['❤️', '💕', '✨', '💖', '🌸', '💫'].map((e, i) => (
+    <div className="relative flex flex-col items-center justify-end h-full overflow-hidden pb-16 px-8 text-center">
+      {/* Foto de fundo */}
+      <motion.img
+        src={fotoPrincipal}
+        alt=""
+        className="absolute inset-0 w-full h-full object-cover object-top"
+        initial={{ scale: 1.08 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 8, ease: 'easeOut' }}
+      />
+
+      {/* Overlay */}
+      <div
+        className="absolute inset-0"
+        style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 40%, rgba(0,0,0,0.93) 100%)' }}
+      />
+
+      {/* Corações flutuando */}
+      {['❤️', '💕', '✨', '💖', '🌹', '🫶🏼'].map((e, i) => (
         <motion.div
           key={i}
-          className="absolute text-2xl pointer-events-none"
-          style={{ left: `${10 + i * 15}%`, bottom: '10%' }}
-          animate={{ y: [0, -(200 + i * 30)], opacity: [0, 0.8, 0], rotate: [0, i % 2 === 0 ? 15 : -15] }}
-          transition={{ duration: 4 + i * 0.5, repeat: Infinity, delay: i * 0.6, ease: 'easeOut' }}
+          className="absolute text-xl pointer-events-none"
+          style={{ left: `${8 + i * 15}%`, bottom: '15%' }}
+          animate={{ y: [0, -(300 + i * 40)], opacity: [0, 0.8, 0] }}
+          transition={{ duration: 4 + i * 0.5, repeat: Infinity, delay: i * 0.7, ease: 'easeOut' }}
         >
           {e}
         </motion.div>
       ))}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="mb-8"
-      >
-        <div className="w-24 h-24 rounded-full flex items-center justify-center text-5xl mx-auto"
-          style={{ background: 'linear-gradient(135deg, #c2185b, #e91e63)', boxShadow: '0 0 60px rgba(233,30,99,0.5)' }}>
-          ❤️
-        </div>
-      </motion.div>
-      <motion.p
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.3, duration: 0.8 }}
-        className="text-white/60 text-base mb-8 leading-relaxed"
-      >
-        E se pudéssemos viver tudo novamente...
-      </motion.p>
-      <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 1.2, duration: 0.8, type: 'spring' }}
-      >
-        <h2 className="text-3xl font-black text-white leading-tight">
-          Eu escolheria você{'\n'}todas as vezes ❤️
-        </h2>
-      </motion.div>
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2, duration: 0.8 }}
-        className="text-white/30 text-sm mt-10"
-      >
-        Com amor, {nome1}
-      </motion.p>
+
+      {/* Conteúdo */}
+      <div className="relative z-10 flex flex-col items-center">
+
+        {/* Linha decorativa */}
+        <motion.div
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: 1 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+          className="w-12 h-0.5 rounded-full mb-6"
+          style={{ background: 'linear-gradient(90deg, transparent, rgba(248,113,113,0.8), transparent)' }}
+        />
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5, duration: 0.8 }}
+          className="text-white/60 text-sm mb-6 leading-relaxed"
+        >
+          De agora até o altar...
+        </motion.p>
+
+        <motion.h2
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.9, duration: 0.8 }}
+          className="font-black text-white leading-tight mb-2"
+          style={{ fontSize: '2rem' }}
+        >
+          Você sempre será
+        </motion.h2>
+
+        <motion.h2
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.1, duration: 0.8 }}
+          className="font-black leading-tight mb-8"
+          style={{ fontSize: '2rem', color: '#fbbf24' }}
+        >
+          o amor da minha vida 🫶🏼
+        </motion.h2>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.8, duration: 0.8 }}
+          className="flex flex-col items-center gap-1"
+        >
+          <div className="h-px w-16 bg-white/20 rounded-full mb-3" />
+          <p className="text-white/40 text-sm">Com amor,</p>
+          <p className="text-white font-bold text-base">{nome1} ❤️</p>
+        </motion.div>
+      </div>
     </div>
   )
 }
@@ -482,7 +516,7 @@ export function WrappedScreen({ data, onClose }: Props) {
     <Slide7 data={data} />,
     <Slide8 data={data} />,
     <Slide9 data={data} />,
-    <Slide10 nome1={data.casal.nome1} nome2={data.casal.nome2} />,
+    <Slide10 nome1={data.casal.nome1} nome2={data.casal.nome2} fotoPrincipal={data.casal.fotoPrincipal} />,
   ]
 
   return (

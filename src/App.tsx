@@ -11,7 +11,7 @@ function LoadingScreen() {
         <div
           className="w-16 h-16 rounded-full flex items-center justify-center text-3xl"
           style={{
-            background: 'linear-gradient(135deg, #0ea5e9, #6366f1)',
+            background: 'linear-gradient(135deg, #f59e0b, #d97706)',
             animation: 'pulse 1.5s ease-in-out infinite',
           }}
         >
@@ -48,6 +48,7 @@ export default function App() {
             key="splash"
             nome1={data.casal.nome1}
             nome2={data.casal.nome2}
+            fotoPrincipal={data.casal.fotoPrincipal}
             onEnter={() => setEntered(true)}
           />
         ) : (

@@ -12,7 +12,7 @@ interface Particle {
   maxLife: number
 }
 
-const COLORS = ['#0ea5e9', '#38bdf8', '#6366f1', '#818cf8', '#06b6d4']
+const COLORS = ['#f59e0b', '#fbbf24', '#d97706', '#fb923c', '#fcd34d']
 
 export function Particles({ count = 30 }: { count?: number }) {
   const canvasRef = useRef<HTMLCanvasElement>(null)

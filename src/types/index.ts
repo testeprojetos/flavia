@@ -1,6 +1,5 @@
 export interface Story {
   imagem: string
-  legenda?: string
 }
 
 export interface Album {
@@ -9,18 +8,6 @@ export interface Album {
   capa: string
   musica: string
   stories: Story[]
-}
-
-export interface Conquista {
-  id: string
-  nivel: 'lendario' | 'epico' | 'raro' | 'comum'
-  icone: string
-  titulo: string
-  descricao: string
-  desbloqueada: boolean
-  progresso: number
-  imagem: string
-  fotoPosition?: string
 }
 
 export interface WrappedNumeros {
@@ -56,7 +43,6 @@ export interface AppData {
     fotos: string[]
   }
   albuns: Album[]
-  conquistas: Conquista[]
   wrapped: {
     musica: { titulo: string; artista: string; imagem: string }
     destinoFavorito: { nome: string; imagem: string }

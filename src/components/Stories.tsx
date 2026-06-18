@@ -238,24 +238,6 @@ export function Stories({ album, onClose }: Props) {
           </motion.div>
         )}
       </AnimatePresence>
-
-      {/* ── Legenda ── */}
-      <AnimatePresence mode="wait">
-        {story.legenda && (
-          <motion.div
-            key={current + '-cap'}
-            className="absolute bottom-8 left-0 right-0 z-10 px-5"
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.3, delay: 0.15 }}
-          >
-            <p className="text-white text-base font-semibold text-center leading-snug">
-              {story.legenda}
-            </p>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </motion.div>
   )
 }

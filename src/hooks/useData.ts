@@ -35,10 +35,6 @@ function resolvePaths(json: AppData): AppData {
         imagem: resolvePath(s.imagem),
       })),
     })),
-    conquistas: json.conquistas.map((c) => ({
-      ...c,
-      imagem: resolvePath(c.imagem),
-    })),
     wrapped: {
       ...json.wrapped,
       musica: {

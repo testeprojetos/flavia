@@ -5,7 +5,6 @@ import { MusicPlayer } from '../components/MusicPlayer'
 import { CoupleCard } from '../components/CoupleCard'
 import { MessageCard } from '../components/MessageCard'
 import { AlbunsSection } from '../components/AlbunsSection'
-import { ConquistasSection } from '../components/ConquistasSection'
 import { RetrospectCard } from '../components/RetrospectCard'
 import { WrappedScreen } from './WrappedScreen'
 import { PlayerProvider } from '../context/PlayerContext'
@@ -81,8 +80,6 @@ export function Dashboard({ data }: Props) {
           nome1={data.casal.nome1}
           nome2={data.casal.nome2}
         />
-
-        <ConquistasSection conquistas={data.conquistas} />
 
         <RetrospectCard
           onOpen={() => setWrappedOpen(true)}

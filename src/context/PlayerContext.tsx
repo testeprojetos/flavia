@@ -28,10 +28,10 @@ interface PlayerContextValue extends PlayerState {
 }
 
 const BG_COLORS = [
-  '#2C2C2A',  // casal1 — carvão escuro   → texto branco
-  '#0F172A',  // casal2 — azul-marinho    → texto branco
-  '#A8B5A2',  // casal3 — verde-sage claro → texto preto
-  '#F2E8DA',  // casal4 — bege claro       → texto preto
+  '#1a1208',  // casal1 — âmbar escuro / noite sertaneja
+  '#1a0a0e',  // casal2 — vinho escuro (combina com as rosas vermelhas)
+  '#1f1005',  // casal3 — marrom dourado / pôr do sol
+  '#0f1020',  // casal4 — azul noturno / céu do entardecer
 ]
 
 const TEXT_COLORS = [

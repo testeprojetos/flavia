@@ -1,15 +1,15 @@
 {
   "casal": {
-    "nome1": "Moisés",
-    "nome2": "Geovana",
-    "inicioRelacionamento": "2025-01-25",
+    "nome1": "Joelson",
+    "nome2": "Flávia",
+    "inicioRelacionamento": "2026-05-10",
     "fotoPrincipal": "/fotos/casal_capa.jpg",
-    "mensagemEspecial": "Geovana,\n\nDesde o primeiro dia em que você entrou na minha vida, tudo ficou mais colorido. Cada manhã acordar sabendo que você existe no meu mundo já transforma qualquer dia comum em algo especial.\n\nVocê me ensinou que amor de verdade não é perfeito, é real. É você rindo do meu lado enquanto a chuva bate na janela. É você me olhando e eu sentir que estou em casa, não importa onde estejamos.\n\nJuntos já vivemos tanto. Viajamos juntos, cada enjuança para tirar foto, cada momento que estivemos juntos, tudo isso se tornou os melhores momentos da minha vida simplesmente porque você estava lá.\n\nEu poderia escrever mil páginas tentando descrever o que você significa para mim, mas acho que a frase mais honesta que consigo dizer é:\n\nSe eu pudesse viver tudo de novo, eu te escolheria todas as vezes.\n\nFeliz Dia dos Namorados, meu amor.\n\nCom todo o meu amor,\nMoisés ❤️"
+    "mensagemEspecial": "Mais um mês ao seu lado, Flávia!\n\nA vida é bem melhor ao seu lado, sou muito mais feliz ao seu lado, por muitos e muitos mais meses ao seu lado.\n\nEu te amo cada dia mais, a cada detalhe, eu sou viciado em você, no seu cheiro, o qual eu nunca quero ir embora deles.\n\nEu sempre me perco nos brilhos dos seus olhos, o seu sorriso alegra meus dias. Quem diria que aquele neguinho, lindo e gostoso, a qual você não ia com a cara, estaria escrevendo texto para você. Haha\n\nQuero comemorar vários e vários meses ao seu lado, vários dias dos namorados, vários natais, você sempre será o amor da minha vida, minha escolha perfeita.\n\nEu te amo, meu amor, mais que simples palavras podem dizer. Você sabe bem que altos e baixos fazem parte, mas tudo fica mais fácil com você.\n\nEu te amo, meu amor!\n\nSempre com você, de agora até o altar 🫶🏼\n\nDo neguinho mais lindo dessa cidade,\nJoelson ❤️"
   },
   "musicaPrincipal": {
-    "titulo": "Sabe",
-    "artista": "Armandinho",
-    "arquivo": "/musicas/Sabe.mp3",
+    "titulo": "Amo Você",
+    "artista": "Jads & Jadson",
+    "arquivo": "/musicas/amo-voce.mp3",
     "fotos": [
       "/fotos/casal1.jpg",
       "/fotos/casal2.jpg",
@@ -24,10 +24,10 @@
       "capa": "/fotos/album1_capa.jpg",
       "musica": "/musicas/dates.mp3",
       "stories": [
-        { "imagem": "/fotos/date1.jpg", "legenda": "Nosso primeiro date ❤️" },
-        { "imagem": "/fotos/date2.jpg", "legenda": "Primeiro dia dos namorados juntos" },
-        { "imagem": "/fotos/date3.jpg", "legenda": "Sorvetinho" },
-        { "imagem": "/fotos/date4.jpg", "legenda": "Comemorando nosso primeiro ano juntos" }
+        { "imagem": "/fotos/date1.jpg" },
+        { "imagem": "/fotos/date2.jpg" },
+        { "imagem": "/fotos/date3.jpg" },
+        { "imagem": "/fotos/date4.jpg" }
       ]
     },
     {
@@ -36,313 +36,68 @@
       "capa": "/fotos/album2_capa.jpg",
       "musica": "/musicas/aleatorias.mp3",
       "stories": [
-        { "imagem": "/fotos/ale1.jpg", "legenda": "Barraca do beijo 😘" },
-        { "imagem": "/fotos/ale2.jpg", "legenda": "Sem filtro, só amor 💕" },
-        { "imagem": "/fotos/ale3.jpg", "legenda": "Treininho 💪🏼" },
-        { "imagem": "/fotos/ale4.jpg", "legenda": "Subida na torre" },
-        { "imagem": "/fotos/ale5.jpg", "legenda": "Nós dois ❤️" },
-        { "imagem": "/fotos/ale6.jpg", "legenda": "Mais um momento especial 💫" }
+        { "imagem": "/fotos/ale1.jpg" },
+        { "imagem": "/fotos/ale2.jpg" },
+        { "imagem": "/fotos/ale3.jpg" },
+        { "imagem": "/fotos/ale4.jpg" },
+        { "imagem": "/fotos/ale5.jpg" },
+        { "imagem": "/fotos/ale6.jpg" }
       ]
     },
     {
-      "id": "viagem",
-      "titulo": "Primeira Viagem",
+      "id": "pedido",
+      "titulo": "Do Começo",
       "capa": "/fotos/album3_capa.jpg",
-      "musica": "/musicas/viagem.mp3",
+      "musica": "/musicas/pedido.mp3",
       "stories": [
-        { "imagem": "/fotos/viagem1.jpg", "legenda": "Virada de ano 🎆" },
-        { "imagem": "/fotos/viagem2.jpg", "legenda": "Fotinha no nascer do sol ☀️" },
-        { "imagem": "/fotos/viagem3.jpg", "legenda": "Ainda do réveillon" },
-        { "imagem": "/fotos/viagem4.jpg", "legenda": "Show de verão" }
+        { "imagem": "/fotos/pedido1.jpg" },
+        { "imagem": "/fotos/pedido2.jpg" },
+        { "imagem": "/fotos/pedido3.jpg" },
+        { "imagem": "/fotos/pedido4.jpg" },
+        { "imagem": "/fotos/pedido5.jpg" }
       ]
-    }
-  ],
-  "conquistas": [
-    {
-      "id": "primeiro_encontro",
-      "nivel": "lendario",
-      "icone": "trophy",
-      "titulo": "Origem",
-      "descricao": "O universo conspirou. Vocês se encontraram — e nada voltou a ser igual.",
-      "desbloqueada": true,
-      "progresso": 100,
-      "imagem": "/fotos/conquista1.jpg"
-    },
-    {
-      "id": "primeiro_eu_te_amo",
-      "nivel": "lendario",
-      "icone": "heart",
-      "titulo": "Três Palavras",
-      "descricao": "Dito em voz alta pela primeira vez. Sem volta. Eu te amo.",
-      "desbloqueada": true,
-      "progresso": 100,
-      "imagem": "/fotos/conquista2.jpg"
-    },
-    {
-      "id": "inseparaveis",
-      "nivel": "lendario",
-      "icone": "infinite",
-      "titulo": "Modo Inseparável",
-      "descricao": "Chegou um ponto em que a ausência do outro já não fazia sentido.",
-      "desbloqueada": true,
-      "progresso": 100,
-      "imagem": "/fotos/conquista3.jpg"
-    },
-    {
-      "id": "meio_ano",
-      "nivel": "epico",
-      "icone": "flame",
-      "titulo": "Seis Meses Sólidos",
-      "descricao": "180 dias. O suficiente pra saber que isso aqui é real.",
-      "desbloqueada": true,
-      "progresso": 100,
-      "imagem": "/fotos/conquista4.jpg"
-    },
-    {
-      "id": "primeira_briga",
-      "nivel": "epico",
-      "icone": "shield",
-      "titulo": "Resistência",
-      "descricao": "Tiveram o primeiro atrito — e escolheram ficar. Isso vale mais do que parece.",
-      "desbloqueada": true,
-      "progresso": 100,
-      "imagem": "/fotos/conquista5.jpg"
-    },
-    {
-      "id": "primeira_viagem",
-      "nivel": "epico",
-      "icone": "compass",
-      "titulo": "Exploradoras",
-      "descricao": "Primeira viagem juntos. Descobriram que se perder junto também é bom.",
-      "desbloqueada": true,
-      "progresso": 100,
-      "imagem": "/fotos/conquista6.jpg"
-    },
-    {
-      "id": "um_ano",
-      "nivel": "epico",
-      "icone": "diamond",
-      "titulo": "Um Ano Completo",
-      "descricao": "365 dias de escolha diária. Parabéns — isso é raro.",
-      "desbloqueada": true,
-      "progresso": 100,
-      "imagem": "/fotos/conquista7.jpg"
-    },
-    {
-      "id": "500_dias",
-      "nivel": "epico",
-      "icone": "zap",
-      "titulo": "Quinhentos Dias",
-      "descricao": "Quinhentos dias de cumplicidade, crescimento e amor. Desbloqueado.",
-      "desbloqueada": true,
-      "progresso": 100,
-      "imagem": "/fotos/conquista8.jpg"
-    },
-    {
-      "id": "primeiro_mes",
-      "nivel": "raro",
-      "icone": "moon",
-      "titulo": "Primeiro Dia",
-      "descricao": "O começo de tudo. Quando a curiosidade virou certeza.",
-      "desbloqueada": true,
-      "progresso": 100,
-      "imagem": "/fotos/conquista9.jpg"
-    },
-    {
-      "id": "cem_dias",
-      "nivel": "raro",
-      "icone": "target",
-      "titulo": "Cem Dias",
-      "descricao": "Não foi sorte. Foi construção — dia após dia.",
-      "desbloqueada": true,
-      "progresso": 100,
-      "imagem": "/fotos/conquista10.jpg"
-    },
-    {
-      "id": "primeiro_natal",
-      "nivel": "raro",
-      "icone": "sparkles",
-      "titulo": "Primeiro Natal",
-      "descricao": "A primeira data especial dividida a dois. A primeira de muitas.",
-      "desbloqueada": true,
-      "progresso": 100,
-      "imagem": "/fotos/conquista11.jpg"
-    },
-    {
-      "id": "apelido",
-      "nivel": "raro",
-      "icone": "smile",
-      "titulo": "Nome Secreto",
-      "descricao": "Ganharam um apelido um pro outro. Agora é oficial.",
-      "desbloqueada": true,
-      "progresso": 100,
-      "imagem": "/fotos/conquista12.jpg"
-    },
-    {
-      "id": "playlist",
-      "nivel": "raro",
-      "icone": "music",
-      "titulo": "Trilha Sonora",
-      "descricao": "Tem música que agora é de vocês dois. Ninguém vai tirar isso.",
-      "desbloqueada": true,
-      "progresso": 100,
-      "imagem": "/fotos/conquista13.jpg"
-    },
-    {
-      "id": "primeira_foto",
-      "nivel": "raro",
-      "icone": "camera",
-      "titulo": "Registrado",
-      "descricao": "A primeira foto juntos. Prova de que isso aconteceu de verdade.",
-      "desbloqueada": true,
-      "progresso": 100,
-      "imagem": "/fotos/conquista14.jpg"
-    },
-    {
-      "id": "bom_dia",
-      "nivel": "comum",
-      "icone": "sun",
-      "titulo": "Ritual do Bom Dia",
-      "descricao": "Virou hábito. E hábito com amor vira necessidade.",
-      "desbloqueada": true,
-      "progresso": 100,
-      "imagem": "/fotos/conquista15.jpg"
-    },
-    {
-      "id": "selfie",
-      "nivel": "comum",
-      "icone": "image",
-      "titulo": "Câmera Virada",
-      "descricao": "A selfie que prova: estavam felizes, e quiseram guardar aquilo.",
-      "desbloqueada": true,
-      "progresso": 100,
-      "imagem": "/fotos/conquista16.jpg"
-    },
-    {
-      "id": "primeiro_presente",
-      "nivel": "comum",
-      "icone": "gift",
-      "titulo": "Com Carinho",
-      "descricao": "O primeiro presente trocado. O gesto importa mais que o embrulho.",
-      "desbloqueada": true,
-      "progresso": 100,
-      "imagem": "/fotos/conquista17.jpg"
-    },
-    {
-      "id": "dormir_junto",
-      "nivel": "comum",
-      "icone": "moon",
-      "titulo": "Boa Noite de Verdade",
-      "descricao": "Adormecer do lado de alguém é um nível de confiança que não se finge.",
-      "desbloqueada": true,
-      "progresso": 100,
-      "imagem": "/fotos/conquista18.jpg"
-    },
-    {
-      "id": "dois_anos",
-      "nivel": "lendario",
-      "icone": "trophy",
-      "titulo": "Dois Anos",
-      "descricao": "Em desbloqueio... a história ainda está sendo escrita.",
-      "desbloqueada": false,
-      "progresso": 71,
-      "imagem": "/fotos/casal1.jpg"
-    },
-    {
-      "id": "casamento",
-      "nivel": "lendario",
-      "icone": "crown",
-      "titulo": "Para Sempre, Oficialmente",
-      "descricao": "O dia em que decidiram que nunca mais seriam só dois — seriam um.",
-      "desbloqueada": false,
-      "progresso": 0,
-      "imagem": "/fotos/casal2.jpg"
-    },
-    {
-      "id": "primeiro_filho",
-      "nivel": "lendario",
-      "icone": "heart",
-      "titulo": "Família",
-      "descricao": "A maior conquista de todas. O amor que cria vida.",
-      "desbloqueada": false,
-      "progresso": 0,
-      "imagem": "/fotos/casal3.jpg"
-    },
-    {
-      "id": "tres_anos",
-      "nivel": "lendario",
-      "icone": "crown",
-      "titulo": "Três Anos",
-      "descricao": "Quando chegar, vai saber o peso disso.",
-      "desbloqueada": false,
-      "progresso": 42,
-      "imagem": "/fotos/casal1.jpg"
-    },
-    {
-      "id": "mil_dias",
-      "nivel": "lendario",
-      "icone": "infinite",
-      "titulo": "Mil Dias",
-      "descricao": "Mil dias. Pouquíssimas pessoas chegam até aqui.",
-      "desbloqueada": false,
-      "progresso": 50,
-      "imagem": "/fotos/casal2.jpg"
-    },
-    {
-      "id": "para_sempre",
-      "nivel": "lendario",
-      "icone": "heart",
-      "titulo": "Para Sempre",
-      "descricao": "Essa conquista não tem barra de progresso. É uma decisão.",
-      "desbloqueada": false,
-      "progresso": 0,
-      "imagem": "/fotos/casal3.jpg"
     }
   ],
   "wrapped": {
     "musica": {
-      "titulo": "Sabe",
-      "artista": "Armandinho",
+      "titulo": "Amo Você",
+      "artista": "Jads & Jadson",
       "imagem": "/fotos/casal1.jpg"
     },
     "destinoFavorito": {
-      "nome": "Nossa primeira viagem",
-      "imagem": "/fotos/viagem1.jpg"
+      "nome": "Ao lado de você",
+      "imagem": "/fotos/casal1.jpg"
     },
     "momentoEspecial": {
-      "descricao": "O dia mais especial",
-      "imagem": "/fotos/conquista7.jpg"
+      "descricao": "O começo de tudo",
+      "imagem": "/fotos/pedido1.jpg"
     },
     "numeros": {
-      "encontros": 87,
-      "viagens": 3,
-      "fotos": 1247,
-      "presentes": 12
+      "encontros": 30,
+      "viagens": 1,
+      "fotos": 100,
+      "presentes": 3
     },
     "top5": [
-      { "posicao": 1, "descricao": "O pedido de namoro", "emoji": "💍" },
-      { "posicao": 2, "descricao": "Primeiro réveillon juntos", "emoji": "🎆" },
-      { "posicao": 3, "descricao": "Primeira viagem juntos", "emoji": "✈️" },
-      { "posicao": 4, "descricao": "Primeiro Dia dos Namorados juntos", "emoji": "🥂" },
-      { "posicao": 5, "descricao": "Primeiro beijo", "emoji": "💋" }
+      { "posicao": 1, "descricao": "O primeiro beijo", "emoji": "💋" },
+      { "posicao": 2, "descricao": "Quando assumimos o namoro", "emoji": "💍" },
+      { "posicao": 3, "descricao": "Primeiro dia dos namorados juntos", "emoji": "🥂" },
+      { "posicao": 4, "descricao": "Nosso primeiro date", "emoji": "🌹" },
+      { "posicao": 5, "descricao": "Primeiro mês juntos", "emoji": "🎉" }
     ],
     "timeline": [
-      { "data": "2020", "evento": "Nos conhecemos ❤️" },
-      { "data": "Mai 2022", "evento": "Primeiro beijo 💋" },
-      { "data": "Ago 2024", "evento": "Primeira foto juntos 📸" },
-      { "data": "Jan 2025", "evento": "Pedido de namoro 💍" },
-      { "data": "Mai 2025", "evento": "Primeira festa juntos 🎉" },
-      { "data": "Jun 2025", "evento": "Primeiro Dia dos Namorados juntos 🥂" },
-      { "data": "Dez 2025", "evento": "Primeira viagem ✈️" },
-      { "data": "Jan 2026", "evento": "Primeiro réveillon juntos 🎆" },
-      { "data": "Jan 2026", "evento": "1 ano juntos 🏆" },
-      { "data": "Jun 2026", "evento": "E a história continua... ♾️" }
+      { "data": "Mai 2026", "evento": "Nos conhecemos melhor ❤️" },
+      { "data": "10 Mai 2026", "evento": "Começamos tudo 💑" },
+      { "data": "Mai 2026", "evento": "Primeiro beijo 💋" },
+      { "data": "Jun 2026", "evento": "Primeiro Dia dos Namorados juntos 🥂" },
+      { "data": "Jun 2026", "evento": "Primeiro mês juntos 🎉" },
+      { "data": "E mais...", "evento": "A história ainda está sendo escrita ♾️" }
     ],
     "melhoresFotos": [
       "/fotos/casal1.jpg",
       "/fotos/casal2.jpg",
       "/fotos/date1.jpg",
-      "/fotos/viagem1.jpg",
+      "/fotos/pedido1.jpg",
       "/fotos/casal3.jpg",
       "/fotos/ale1.jpg"
     ]
