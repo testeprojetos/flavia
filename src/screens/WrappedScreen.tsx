@@ -388,7 +388,7 @@ function Slide9({ data }: { data: AppData }) {
 }
 
 // ── Slide 10 — Mensagem final ─────────────────────────────────────────────
-function Slide10({ nome1, nome2, fotoPrincipal }: { nome1: string; nome2?: string; fotoPrincipal: string }) {
+function Slide10({ nome1, fotoPrincipal }: { nome1: string; nome2?: string; fotoPrincipal: string }) {
   return (
     <div className="relative flex flex-col items-center justify-end h-full overflow-hidden pb-16 px-8 text-center">
       {/* Foto de fundo */}
