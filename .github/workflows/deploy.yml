@@ -34,8 +34,11 @@ jobs:
 
       - run: npm run build
 
+      - name: Garantir .nojekyll no dist
+        run: touch dist/.nojekyll
+
       - name: Verificar arquivos no dist
-        run: ls dist/ && ls dist/fotos/ || echo "fotos nao encontradas"
+        run: ls -la dist/ && ls dist/fotos/ || echo "fotos nao encontradas"
 
       - uses: actions/configure-pages@v4
 
